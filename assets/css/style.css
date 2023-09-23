@@ -10,6 +10,15 @@ body {
     padding-bottom: 20px;
 }
 
+#pause-video {
+    font-size: 20px;
+}
+
+#music-toggle {
+    font-size: 20px;
+}
+
+
 #myVideo {
     object-fit: cover;
     width: 100vw;
