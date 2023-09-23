@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+    <title>THM-Generator</title>
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <meta name="description" content="THM-Generator- A tool to help users pick a THM room!">
+    <meta name="keywords" content="THM">
+    <meta name="author" content="Joe Wells">
+</head>
+
+<body>
+    <!-- The Video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/video/background3.mp4" type="video/mp4">
+    </video>
+
+    <!--The Music-->
+    <audio id="background-music">
+        <source src="assets/sounds/nexus-img-main-version-22138-02-54.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <header class="viewport-header">
+        <div class="button-bar">
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+            <button id="music-toggle">Toggle Music</button>
+        </div>
+        <h1>
+            Can't decide what to do on TryHackMe?
+            <span>THM-Generator</span>
+            we'll do the thinking for you!
+        </h1>
+    </header>
+    <main>
+        <div class="container">
+            <!--Free rooms listed so far-->
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeInfo)">Free-Info</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeEasy)">Free-Easy</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeMedium)">Free-Medium</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeHard)">Free-Hard</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeInsane)">Free-Insane</button>
+        </div>
+        <div>
+            <a id="randomWebsiteLink" href="#" target="_blank" style="display: none;">Open Random Website</a>
+        </div>
+    </main>
+
+
+
+    <!--Custom JS-->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/music.js"></script>
+    <script src="assets/js/video.js"></script>
+
+</body>
+
+</html>
