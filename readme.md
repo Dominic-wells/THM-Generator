@@ -35,6 +35,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Message me at https://www.linkedin.com/in/joe-d-wells/
 
-## Credits\
+## Credits
 
 **Developer:** Joe Wells
