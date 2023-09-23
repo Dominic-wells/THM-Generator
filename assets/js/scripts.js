@@ -499,14 +499,6 @@ const freeInsane = [
   "https://tryhackme.com/room/cct2019",
 ];
 
-// function pickRandomWebsiteFromList(list) {
-//   // Get a random website from the list
-//   const randomWebsite = list[Math.floor(Math.random() * list.length)];
-
-//   // Set the href attribute of the link with the ID "randomWebsiteLink" to the random website
-//   document.getElementById("randomWebsiteLink").href = randomWebsite;
-// }
-
 function pickRandomWebsiteFromList(list) {
   const randomWebsite = list[Math.floor(Math.random() * list.length)];
 
@@ -516,8 +508,24 @@ function pickRandomWebsiteFromList(list) {
   // Set the href attribute
   linkElem.href = randomWebsite;
 
+  // Determine the name to display based on the list
+  let listName;
+  if (list === freeInfo) {
+    listName = "Free-Info Room";
+  } else if (list === freeEasy) {
+    listName = "Free-Easy Room";
+  } else if (list === freeMedium) {
+    listName = "Free-Medium Room";
+  } else if (list === freeHard) {
+    listName = "Free-Hard Room";
+  } else if (list === freeInsane) {
+    listName = "Free-Insane Room";
+  } else {
+    listName = "selected website"; // Default value in case none of the above lists match
+  }
+
   // Update the inner text to prompt the user to click
-  linkElem.innerText = "Click to open selected website";
+  linkElem.innerText = `Click to open ${listName}`;
 
   // Display the link
   linkElem.style.display = "inline-block";
