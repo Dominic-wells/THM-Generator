@@ -4,31 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Googlefonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
-    <title>THM-Generator</title>
-
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <meta name="description" content="THM-Generator- A tool to help users pick a THM room!">
     <meta name="keywords" content="THM">
     <meta name="author" content="Joe Wells">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <title>THM-Generator</title>
 </head>
 
 <body>
-    <!-- The Video -->
+    <!-- Video Background -->
     <video autoplay muted loop id="myVideo">
         <source src="assets/video/background3.mp4" type="video/mp4">
     </video>
 
-    <!--The Music-->
+    <!-- Background Music -->
     <audio id="background-music">
         <source src="assets/sounds/nexus-img-main-version-22138-02-54.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -38,7 +41,7 @@
     <header class="viewport-header">
         <div class="button-bar">
             <button id="pause-video" onclick="myFunction()">Pause</button>
-            <button id="music-toggle">Toggle Music</button>
+            <button id="music-toggle" aria-label="Toggle Music">Toggle Music</button>
         </div>
         <h1>
             Can't decide what to do on TryHackMe?
@@ -48,15 +51,35 @@
     </header>
     <main>
         <div class="container">
-            <!--Free rooms listed so far-->
             <button class="room-selection" onclick="pickRandomWebsiteFromList(freeInfo)">Free-Info</button>
             <button class="room-selection" onclick="pickRandomWebsiteFromList(freeEasy)">Free-Easy</button>
             <button class="room-selection" onclick="pickRandomWebsiteFromList(freeMedium)">Free-Medium</button>
             <button class="room-selection" onclick="pickRandomWebsiteFromList(freeHard)">Free-Hard</button>
             <button class="room-selection" onclick="pickRandomWebsiteFromList(freeInsane)">Free-Insane</button>
-        </div>
-        <div>
-            <a id="randomWebsiteLink" href="#" target="_blank" style="display: none;">Open Random Website</a>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeTools)">Free-Tools</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeNetworking)">Free-Network</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(paidNetworking)">Paid-Network</button>
+            <button class="room-selection"
+                onclick="pickRandomWebsiteFromList(freeCryptography)">Free-Cryptography</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeForensics)">Free-Forensics</button>
+            <button class="room-selection"
+                onclick="pickRandomWebsiteFromList(freeProgramming)">Free-Programming</button>
+            <button class="room-selection"
+                onclick="pickRandomWebsiteFromList(paidProgramming)">Paid-Programming</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeWeb)">Free-Web</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(paidWeb)">Paid-Web</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(paidForensics)">Paid-Forensics</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeForensics)">Free-Forensics</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeLinux)">Free-Linux</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(paidLinux)">Paid-Linux</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeWindows)">Free-Windows</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(paidWindows)">Paid-Windows</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeThreat)">Free-Threat</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(paidThreat)">Paid-Threat</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeMalware)">Free-Malware</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(paidMalware)">Paid-Malware</button>
+            <button class="room-selection" onclick="pickRandomWebsiteFromList(freeCVE)">Free-CVE</button>
+            <!-- <button class="room-selection" onclick="pickRandomWebsiteFromList(paidCVE)">Paid-CVE</button> -->
         </div>
     </main>
 
