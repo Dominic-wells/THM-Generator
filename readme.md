@@ -11,7 +11,7 @@ The THM-Generator is a user-friendly tool designed to help users pick a TryHackM
 ## Features
 
 - **Random Room Selection:** With just a click of a button, users can get a random room suggestion from the selected category.
-- **Multiple Categories:** From informational rooms to beginner, medium, hard, and even insane challenges, there's something for everyone.
+- **Multiple Categories:** From informational rooms to beginner, medium, hard, insane challenges and even subjects, there's something for everyone.
 
 ## Setup
 
@@ -22,7 +22,7 @@ The THM-Generator is a user-friendly tool designed to help users pick a TryHackM
 
 1.  **Visit the THM-Generator site. https://dominic-wells.github.io/THM-Generator/ **
 2.  **Pick a Category:** Choose from Free-Info, Free-Easy, Free-Medium, Free-Hard, or Free-Insane.
-3.  **Get a Suggestion:** After selecting a category, a link to a random room from that category will appear.
+3.  **Get a Suggestion:** After selecting a category, a the room will open in a new tab.
 4.  **Dive In:** Click on the provided link to start your next adventure on TryHackMe!
 
 ## Additional Features
