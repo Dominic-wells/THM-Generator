@@ -499,34 +499,411 @@ const freeInsane = [
   "https://tryhackme.com/room/cct2019",
 ];
 
+const freeTools = [
+  "https://tryhackme.com/room/phishinghiddeneye",
+  "https://tryhackme.com/room/furthernmap",
+  "https://tryhackme.com/room/ffuf",
+  "https://tryhackme.com/room/rustscan",
+  "https://tryhackme.com/room/rpnessusredux",
+  "https://tryhackme.com/room/nmap01",
+  "https://tryhackme.com/room/burpsuitebasics",
+  "https://tryhackme.com/room/burpsuiterepeater",
+  "https://tryhackme.com/room/toolboxvim",
+  "https://tryhackme.com/room/metasploitintro",
+  "https://tryhackme.com/room/hydra",
+  "https://tryhackme.com/room/sqlmap",
+  "https://tryhackme.com/room/threatinteltools",
+  "https://tryhackme.com/room/rptmux",
+  "https://tryhackme.com/room/parrotpost",
+  "https://tryhackme.com/room/somesint",
+  "https://tryhackme.com/room/activerecon",
+  "https://tryhackme.com/room/walkinganapplication",
+  "https://tryhackme.com/room/passiverecon",
+  "https://tryhackme.com/room/windowsfundamentals3xzx",
+  "https://tryhackme.com/room/rptmux",
+  "https://tryhackme.com/room/thecodcaper",
+  "https://tryhackme.com/room/breachingad",
+  "https://tryhackme.com/room/easypeasyctf",
+  "https://tryhackme.com/room/introtopwntools",
+  "https://tryhackme.com/room/intermediatenmap",
+  "https://tryhackme.com/room/pwn101",
+  "https://tryhackme.com/room/bruteforceheroes",
+  "https://tryhackme.com/room/wiresharkthebasics",
+  "https://tryhackme.com/room/androidhacking101",
+];
+
+// const paidTools = [
+//   "https://tryhackme.com/room/tshark",
+// ];
+
+const freeNetworking = [
+  "https://tryhackme.com/room/introtonetworking",
+  "https://tryhackme.com/room/whatisnetworking",
+  "https://tryhackme.com/room/introtolan",
+  "https://tryhackme.com/room/wiresharkthebasics",
+  "https://tryhackme.com/room/layer2",
+];
+
+const paidNetworking = [
+  "https://tryhackme.com/room/networkservices",
+  "https://tryhackme.com/room/osimodelzi",
+  "https://tryhackme.com/room/extendingyournetwork",
+  "https://tryhackme.com/room/packetsframes",
+  "https://tryhackme.com/room/protocolsandservers2",
+];
+
+const freeCryptography = [
+  "https://tryhackme.com/room/cryptographyfordummies",
+  "https://tryhackme.com/room/cryptographyintro",
+  "https://tryhackme.com/room/malresearching",
+  "https://tryhackme.com/room/tonythetiger",
+  "https://tryhackme.com/room/cicada3301vol1",
+  "https://tryhackme.com/room/cherryblossom",
+];
+
+// const paidCryptography = [
+//   "https://tryhackme.com/room/zer0logon",
+// ];
+
+const freeForensics = [
+  "https://tryhackme.com/room/introdigitalforensics",
+  "https://tryhackme.com/room/startup",
+  "https://tryhackme.com/room/wiresharkthebasics",
+  "https://tryhackme.com/room/investigatingwindows",
+  "https://tryhackme.com/room/windowsforensics1",
+  "https://tryhackme.com/room/h4cked",
+  "https://tryhackme.com/room/introductoryroomdfirmodule",
+  "https://tryhackme.com/room/trafficanalysisessentials",
+  "https://tryhackme.com/room/autopsy2ze0",
+  "https://tryhackme.com/room/btredlinejoxr3d",
+  "https://tryhackme.com/room/linuxserverforensics",
+  "https://tryhackme.com/room/memoryforensics",
+  "https://tryhackme.com/room/confidential",
+  "https://tryhackme.com/room/mrphisher",
+  "https://tryhackme.com/room/caseb4dm755",
+  "https://tryhackme.com/room/forensics",
+  "https://tryhackme.com/room/tardigrade",
+  "https://tryhackme.com/room/cct2019",
+  "https://tryhackme.com/room/unattended",
+];
+
+const paidForensics = [
+  "https://tryhackme.com/room/wireshark",
+  "https://tryhackme.com/room/yara",
+  "https://tryhackme.com/room/btautopsye0",
+  "https://tryhackme.com/room/wiresharkpacketoperations",
+  "https://tryhackme.com/room/malremnuxv2",
+  "https://tryhackme.com/room/splunk201",
+  "https://tryhackme.com/room/wiresharktrafficanalysis",
+  "https://tryhackme.com/room/linuxforensics",
+  "https://tryhackme.com/room/volatility",
+  "https://tryhackme.com/room/windowsforensics2",
+  "https://tryhackme.com/room/zeekbro",
+  "https://tryhackme.com/room/networkminer",
+  "https://tryhackme.com/room/brim",
+  "https://tryhackme.com/room/iosforensics",
+  "https://tryhackme.com/room/zeekbroexercises",
+  "https://tryhackme.com/room/disgruntled",
+  "https://tryhackme.com/room/velociraptorhp",
+  "https://tryhackme.com/room/registry4n6",
+];
+
+const freeProgramming = [
+  "https://tryhackme.com/room/django",
+  "https://tryhackme.com/room/pythonbasics",
+  "https://tryhackme.com/room/hackernote",
+  "https://tryhackme.com/room/kiba",
+  "https://tryhackme.com/room/breakoutthecage1",
+  "https://tryhackme.com/room/jpgchat",
+  "https://tryhackme.com/room/peakhill",
+  "https://tryhackme.com/room/intropocscripting",
+  "https://tryhackme.com/room/flask",
+  "https://tryhackme.com/room/battery",
+  "https://tryhackme.com/room/capture",
+  "https://tryhackme.com/room/jupyter101",
+  "https://tryhackme.com/room/anonymousplayground",
+  "https://tryhackme.com/room/pythonplayground",
+  "https://tryhackme.com/room/weasel",
+  "https://tryhackme.com/room/vulnnetdotpy",
+  "https://tryhackme.com/room/ret2libc",
+  "https://tryhackme.com/room/unbakedpie",
+  "https://tryhackme.com/room/m4tr1xexitdenied",
+  "https://tryhackme.com/room/safezone",
+  "https://tryhackme.com/room/crylo4a",
+  "https://tryhackme.com/room/supersecrettip",
+  "https://tryhackme.com/room/rust",
+  "https://tryhackme.com/room/javascriptbasics",
+  "https://tryhackme.com/room/spring4shell",
+  "https://tryhackme.com/room/tonythetiger",
+  "https://tryhackme.com/room/jason",
+  "https://tryhackme.com/room/vulnnetnode",
+  "https://tryhackme.com/room/cve202226134",
+  "https://tryhackme.com/room/vulnnetdotjar",
+  "https://tryhackme.com/room/jvmreverseengineering",
+  "https://tryhackme.com/room/crylo4a",
+  "https://tryhackme.com/room/inacave",
+  "https://tryhackme.com/room/shaker",
+  "https://tryhackme.com/room/windowsapi",
+  "https://tryhackme.com/room/githappens",
+  "https://tryhackme.com/room/sqlmap",
+  "https://tryhackme.com/room/catregex",
+];
+
+const paidProgramming = [
+  "https://tryhackme.com/room/pythonforcybersecurity",
+  "https://tryhackme.com/room/scripting",
+  "https://tryhackme.com/room/jack",
+  "https://tryhackme.com/room/securesolacodersintra",
+  "https://tryhackme.com/room/temple",
+  "https://tryhackme.com/room/howwebsiteswork",
+  "https://tryhackme.com/room/traverse",
+  "https://tryhackme.com/room/obfuscationprinciples",
+];
+
+const freeWeb = [
+  "https://tryhackme.com/room/googledorking",
+  "https://tryhackme.com/room/httpindetail",
+  "https://tryhackme.com/room/contentdiscovery",
+  "https://tryhackme.com/room/wonderland",
+  "https://tryhackme.com/room/owasptop102021",
+  "https://tryhackme.com/room/django",
+  "https://tryhackme.com/room/bolt",
+  "https://tryhackme.com/room/ultratech1",
+  "https://tryhackme.com/room/githappens",
+  "https://tryhackme.com/room/shodan",
+  "https://tryhackme.com/room/webosint",
+  "https://tryhackme.com/room/ffuf",
+  "https://tryhackme.com/room/sqlmap",
+  "https://tryhackme.com/room/burpsuitebasics",
+  "https://tryhackme.com/room/burpsuiterepeater",
+];
+
+const paidWeb = [
+  "https://tryhackme.com/room/uploadvulns",
+  "https://tryhackme.com/room/puttingitalltogether",
+  "https://tryhackme.com/room/howwebsiteswork",
+  "https://tryhackme.com/room/oscommandinjection",
+  "https://tryhackme.com/room/webenumerationv2",
+  "https://tryhackme.com/room/dastzap",
+  "https://tryhackme.com/room/burpsuiteintruder",
+  "https://tryhackme.com/room/awsbasicconcepts",
+  "https://tryhackme.com/room/burpsuiteintruder",
+  "https://tryhackme.com/room/burpsuiteom",
+  "https://tryhackme.com/room/burpsuiteextensions",
+];
+
+const freeLinux = [
+  "https://tryhackme.com/room/linuxfundamentalspart1",
+  "https://tryhackme.com/room/linuxfundamentalspart2",
+  "https://tryhackme.com/room/linuxfundamentalspart3",
+  "https://tryhackme.com/room/linuxprivesc",
+  "https://tryhackme.com/room/linprivesc",
+  "https://tryhackme.com/room/linuxprivescarena",
+  "https://tryhackme.com/room/linuxstrengthtraining",
+  "https://tryhackme.com/room/rptmux",
+  "https://tryhackme.com/room/linuxagency",
+  "https://tryhackme.com/room/linuxbackdoors",
+  "https://tryhackme.com/room/linuxmodules",
+  "https://tryhackme.com/room/toolboxvim",
+  "https://tryhackme.com/room/ninjaskills",
+  "https://tryhackme.com/room/linuxserverforensics",
+  "https://tryhackme.com/room/linuxfunctionhooking",
+  "https://tryhackme.com/room/debug",
+];
+
+const paidLinux = [
+  "https://tryhackme.com/room/commonlinuxprivesc",
+  "https://tryhackme.com/room/operatingsystemsecurity",
+  "https://tryhackme.com/room/activerecon",
+  "https://tryhackme.com/room/lazyadmin",
+  "https://tryhackme.com/room/lle",
+  "https://tryhackme.com/room/linuxforensics",
+  "https://tryhackme.com/room/linuxsystemhardening",
+  "https://tryhackme.com/room/binex",
+  "https://tryhackme.com/room/disgruntled",
+  "https://tryhackme.com/room/hardeningbasicspart1",
+  "https://tryhackme.com/room/hardeningbasicspart2",
+];
+
+const freeWindows = [
+  "https://tryhackme.com/room/windowsfundamentals1xbx",
+  "https://tryhackme.com/room/windowsfundamentals2x0x",
+  "https://tryhackme.com/room/windowsfundamentals3xzx",
+  "https://tryhackme.com/room/investigatingwindows",
+  "https://tryhackme.com/room/windowsforensics1",
+  "https://tryhackme.com/room/windows10privesc",
+  "https://tryhackme.com/room/introductoryroomdfirmodule",
+  "https://tryhackme.com/room/windowsprivescarena",
+  "https://tryhackme.com/room/win64assembly",
+  "https://tryhackme.com/room/bypassinguac",
+  "https://tryhackme.com/room/windowsapi",
+  "https://tryhackme.com/room/investigatingwindows2",
+  "https://tryhackme.com/room/x8664arch",
+  "https://tryhackme.com/room/throwback",
+  "https://tryhackme.com/room/windowsreversingintro",
+  "https://tryhackme.com/room/forensics",
+  "https://tryhackme.com/room/investigatingwindows3",
+  "https://tryhackme.com/room/windowsbase",
+];
+
+const paidWindows = [
+  "https://tryhackme.com/room/btwindowsinternals",
+  "https://tryhackme.com/room/windowsprivesc20",
+  "https://tryhackme.com/room/powershell",
+  "https://tryhackme.com/room/sysmon",
+  "https://tryhackme.com/room/windowseventlogs",
+  "https://tryhackme.com/room/windowslocalpersistence",
+  "https://tryhackme.com/room/lateralmovementandpivoting",
+  "https://tryhackme.com/room/windowsinternals",
+  "https://tryhackme.com/room/windowsforensics2",
+  "https://tryhackme.com/room/powershellforpentesters",
+  "https://tryhackme.com/room/microsoftwindowshardening",
+  "https://tryhackme.com/room/abusingwindowsinternals",
+  "https://tryhackme.com/room/runtimedetectionevasion",
+  "https://tryhackme.com/room/obfuscationprinciples",
+  "https://tryhackme.com/room/basicdynamicanalysis",
+  "https://tryhackme.com/room/signatureevasion",
+  "https://tryhackme.com/room/monitoringevasion",
+];
+
+const freeThreat = [
+  "https://tryhackme.com/room/principlesofsecurity",
+  "https://tryhackme.com/room/mitre",
+  "https://tryhackme.com/room/pyramidofpainax",
+  "https://tryhackme.com/room/securityawarenessintro",
+  "https://tryhackme.com/room/cyberthreatintel",
+  "https://tryhackme.com/room/threatinteltools",
+  "https://tryhackme.com/room/threatmodelling",
+  "https://tryhackme.com/room/intelcreationandcontainment",
+  "https://tryhackme.com/room/threatintelligenceforsoc",
+  "https://tryhackme.com/room/threatemulationintro",
+];
+
+const paidThreat = [
+  "https://tryhackme.com/room/defensivesecurity",
+  "https://tryhackme.com/room/unifiedkillchain",
+  "https://tryhackme.com/room/securityprinciples",
+  "https://tryhackme.com/room/redteamthreatintel",
+  "https://tryhackme.com/room/misp",
+  "https://tryhackme.com/room/opencti",
+  "https://tryhackme.com/room/trooper",
+  "https://tryhackme.com/room/caldera",
+];
+
+const freeMalware = [
+  "https://tryhackme.com/room/malmalintroductory",
+  "https://tryhackme.com/room/historyofmalware",
+  "https://tryhackme.com/room/basicmalwarere",
+  "https://tryhackme.com/room/commonattacks",
+  "https://tryhackme.com/room/malresearching",
+  "https://tryhackme.com/room/dissectingpeheaders",
+  "https://tryhackme.com/room/androidmalwareanalysis",
+  "https://tryhackme.com/room/malbuster",
+];
+
+const paidMalware = [
+  "https://tryhackme.com/room/defensivesecurity",
+  "https://tryhackme.com/room/yara",
+  "https://tryhackme.com/room/malstrings",
+  "https://tryhackme.com/room/intromalwareanalysis",
+  "https://tryhackme.com/room/malremnuxv2",
+  "https://tryhackme.com/room/volatility",
+  "https://tryhackme.com/room/mma",
+  "https://tryhackme.com/room/obfuscationprinciples",
+  "https://tryhackme.com/room/staticanalysis1",
+  "https://tryhackme.com/room/x86assemblycrashcourse",
+  "https://tryhackme.com/room/basicdynamicanalysis",
+  "https://tryhackme.com/room/antireverseengineering",
+  "https://tryhackme.com/room/advanceddynamicanalysis",
+];
+
+const freeCVE = [
+  "https://tryhackme.com/room/blue",
+  "https://tryhackme.com/room/solar",
+  "https://tryhackme.com/room/vulnerabilities101",
+  "https://tryhackme.com/room/tomghost",
+  "https://tryhackme.com/room/blaster",
+  "https://tryhackme.com/room/blog",
+  "https://tryhackme.com/room/source",
+  "https://tryhackme.com/room/sudovulnsbypass",
+  "https://tryhackme.com/room/0day",
+  "https://tryhackme.com/room/pwnkit",
+  "https://tryhackme.com/room/dirtypipe",
+  "https://tryhackme.com/room/sudovulnssamedit",
+  "https://tryhackme.com/room/hackernote",
+  "https://tryhackme.com/room/sudovulnsbof",
+  "https://tryhackme.com/room/overlayfs",
+  "https://tryhackme.com/room/badbyte",
+  "https://tryhackme.com/room/spring4shell",
+  "https://tryhackme.com/room/yearofthejellyfish",
+  "https://tryhackme.com/room/outlookntlmleak",
+  "https://tryhackme.com/room/polkit",
+  "https://tryhackme.com/room/cve202141773",
+  "https://tryhackme.com/room/wordpresscve202129447",
+  "https://tryhackme.com/room/cve202226923",
+  "https://tryhackme.com/room/nax",
+  "https://tryhackme.com/room/ollie",
+  "https://tryhackme.com/room/tonythetiger",
+  "https://tryhackme.com/room/jason",
+  "https://tryhackme.com/room/dejavu",
+  "https://tryhackme.com/room/magician",
+  "https://tryhackme.com/room/cve202226134",
+  "https://tryhackme.com/room/printnightmarehpzqlp8",
+  "https://tryhackme.com/room/localpotato",
+  "https://tryhackme.com/room/follinamsdt",
+  "https://tryhackme.com/room/lumberjackturtle",
+  "https://tryhackme.com/room/cherryblossom",
+  "https://tryhackme.com/room/printnightmarec3kj",
+  "https://tryhackme.com/room/shaker",
+];
+
+// const paidCVE = [
+//   "https://tryhackme.com/room/hackpark",
+//   "https://tryhackme.com/room/zer0logon",
+// ];
+
+const listNames = {
+  freeInfo: "Free-Info Room",
+  freeEasy: "Free-Easy Room",
+  freeMedium: "Free-Medium Room",
+  freeHard: "Free-Hard Room",
+  freeInsane: "Free-Insane Room",
+  freeTools: "Free-Tools Room",
+  paidTools: "Paid-Tools Room",
+  freeNetworking: "Free-Networking Room",
+  paidNetworking: "Paid-Networking Room",
+  freeCryptography: "Free-Cryptography Room",
+  paidCryptography: "Paid-Cryptography Room",
+  freeForensics: "Free-Forensics Room",
+  paidForensics: "Paid-Forensics Room",
+  freeProgramming: "Free-Programming Room",
+  paidProgramming: "Paid-Programming Room",
+  freeWeb: "Free-Web Room",
+  paidWeb: "Paid-Web Room",
+  freeLinux: "Free-Linux Room",
+  paidLinux: "Paid-Linux Room",
+  freeWindows: "Free-Windows Room",
+  paidWindows: "Paid-Windows Room",
+  freeThreat: "Free-Threat Room",
+  paidThreat: "Paid-Threat Room",
+  freeMalware: "Free-Malware Room",
+  paidMalware: "Paid-Malware Room",
+  freeCVE: "Free-CVE Room",
+  // paidCVE: "Paid-CVE Room",
+};
+
 function pickRandomWebsiteFromList(list) {
-  const randomWebsite = list[Math.floor(Math.random() * list.length)];
-
-  // Grab the link element
-  let linkElem = document.getElementById("randomWebsiteLink");
-
-  // Set the href attribute
-  linkElem.href = randomWebsite;
-
-  // Determine the name to display based on the list
-  let listName;
-  if (list === freeInfo) {
-    listName = "Free-Info Room";
-  } else if (list === freeEasy) {
-    listName = "Free-Easy Room";
-  } else if (list === freeMedium) {
-    listName = "Free-Medium Room";
-  } else if (list === freeHard) {
-    listName = "Free-Hard Room";
-  } else if (list === freeInsane) {
-    listName = "Free-Insane Room";
-  } else {
-    listName = "selected website"; // Default value in case none of the above lists match
+  // Ensure the list is valid before proceeding
+  if (!Array.isArray(list) || list.length === 0) {
+    console.error("Provided list is not valid");
+    return;
   }
 
-  // Update the inner text to prompt the user to click
-  linkElem.innerText = `Click to open ${listName}`;
+  const randomWebsite = list[Math.floor(Math.random() * list.length)];
 
-  // Display the link
-  linkElem.style.display = "inline-block";
+  // Retrieve the list name using the mapping object
+  let listName = listNames[list] || "selected website";
+
+  // Redirect the user to the selected website
+  window.open(randomWebsite, "_blank");
 }
